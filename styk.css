@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:url('image/train.png') center/cover no-repeat;
+    position:relative;
+    color:white;
+}
+
+/* Overlay */
+
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-size:22px;
+}
+
+.logo-section h1{
+    font-size:35px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+    font-weight:600;
+}
+
+.login-btn,
+.account-btn{
+    background:#17246b;
+    border:3px solid #ff7b22;
+    padding:15px 30px;
+    border-radius:15px;
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+}
+ 
+ .login-btn:hover{
+     background: wheat;
+    color: #17246b;
+    transition: 0.3s;
+    border: 2px solid #17246b;
+ 
+ }
+hr{
+    margin:0 40px;
+    border:2px solid white;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    margin-top:60px;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:95px;
+    font-family:Georgia, serif;
+    line-height:1.1;
+    font-weight:400;
+}
+
+.hero p{
+    margin-top:35px;
+    font-size:32px;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.offer-btn{
+    margin-top:30px;
+    background:#b85b3c;
+    border:none;
+    color:white;
+    padding:15px 40px;
+    border-radius:15px;
+    font-size:24px;
+    cursor:pointer;
+}
+ .offer-btn:hover{
+    background: wheat;
+    color: #17246b;
+    transition: 0.3s;
+    border: 2px solid #17246b;
+ }
+
+/* Search Form */
+
+.search-container{
+    width:85%;
+    margin:50px auto;
+    border:5px solid #d97121;
+    border-radius:20px;
+    background:rgba(0,0,0,0.35);
+    padding:20px;
+}
+
+.search-container h3{
+    color:#ff7b22;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:10px;
+    font-size:22px;
+    font-weight:bold;
+    display: block;
+    color: white
+}
+
+.input-group input{
+    width:220px;
+    height:50px;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:18px;
+}
+
+.search-btn{
+    background:#c96b49;
+    color:black;
+    border:none;
+    border-radius:15px;
+    padding:15px 40px;
+    font-size:30px;
+    cursor:pointer;
+}
+ .search-btn:hover{
+ background: wheat;
+    color: #17246b;
+    transition: 0.3s;
+    border: 2px solid #17246b;
+ }
+/* Login Page */
+
+.login-page{
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.login-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.login-card{
+    width:420px;
+    padding:40px;
+    border:5px solid #d97121;
+    border-radius:40px;
+    background:rgba(0,0,0,0.45);
+    text-align:center;
+}
+
+.login-card h2{
+    color:#ff7b22;
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.login-card form{
+    display:flex;
+    flex-direction:column;
+}
+
+.login-card label{
+    text-align:left;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.login-card input{
+    height:50px;
+    margin-bottom:35px;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:20px;
+}
+
+.login-card button{
+    width:160px;
+    margin:0 auto 25px;
+    background:#b85b3c;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:15px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.login-card a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-top:12px;
+    font-size:22px;
+}
+ 
+/* Footer */
+
+footer{
+    width:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    gap:100px;
+    padding:25px;
+    flex-wrap:wrap;
+
+}
+
+.footer-box{
+    min-width:200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h4{
+
+    color:#ff7b22;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.footer-box a{
+    color:yellow;
+    text-decoration:none;
+    gap: 10px;
+}
+
+.icons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    font-size:30px;
+    
+}
+ .account-icons i{
+    color: yellow;
+    font-size: 24px;
+ }
+
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:65px;
+    }
+
+    .hero p{
+        font-size:24px;
+    }
+
+    .search-box{
+        justify-content:center;
+    }
+
+    footer{
+        gap:40px;
+    }
+}
+/* 1. Set the new background image */
+body {
+background-image: url(image/Elevate.png);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+/* 2. Resize the logo to match the Login button size */
+.logo-inline-btn {
+height: 40px;
+width: auto;
+margin-right: 15px;
+}
+
+/* 3. Align the logo and text horizontally */
+.logo-and-links {
+display: flex;
+align-items: center;
+}
+
+/* 4. Ensure header layout is spaced properly */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+}
+
+/* ... Any existing codes in your file ... */
+
+/* Add the new code for the login page here at the end of the file */
+
+/* Styling for the login page background only */
+.login-page {
+background-image: url('image/Elexvate-login.png');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+/* Styling for the login card container to make it stand out */
+.login-card {
+background: rgba(8, 0, 0, 0.9); /* Semi-transparent white background */
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+}
